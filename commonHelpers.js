@@ -1,19 +1,19 @@
-import{l as n}from"./assets/initialization-b58de053.js";import"./assets/vendor-86291ea8.js";function g(s={},r=!1){const{name:a,burnedCalories:e,time:l,bodyPart:d,target:u,rating:p,id:t}=s;let c="";return r?c=`<button type="button" class="exercise-card-remove-btn" data-delete-id="${t}">
+import{l as i}from"./assets/initialization-b58de053.js";import"./assets/vendor-86291ea8.js";function m(e={},s=!1){const{name:r,burnedCalories:l,time:n,bodyPart:d,target:p,rating:u,_id:a}=e;let t="";return s?t=`<button type="button" class="exercise-card-remove-btn" data-delete-id="${a}">
        <svg class="exercise-card-remove-icon">
            <use href="./img/sprite.svg#icon-trash-black"></use>
        </svg>
-    </button>`:c=`<p class="exercise-card-rating">
-      <span class="exercise-card-rating-value">${p}</span>
+    </button>`:t=`<p class="exercise-card-rating">
+      <span class="exercise-card-rating-value">${u}</span>
          <svg class="exercise-card-rating-star">
            <use href="./img/sprite.svg#icon-Star-gold"></use>
          </svg>
-      </p>`,`<li class="exercise-card-item" data-card-id="${t}">
+      </p>`,`<li class="exercise-card-item" data-card-id="${a}">
   <div class="exercise-card-actions">
     <div class="exercise-card-workout-container">
       <p class="exercise-card-workout-text">Workout</p>
-      ${c}
+      ${t}
     </div>
-    <button type="button" class="exercise-card-start-btn" data-open-id="${t}">
+    <button type="button" class="exercise-card-start-btn" data-open-id="${a}">
       <span class="exercise-card-start-btn-text">Start</span>
       <svg class="exercise-card-start-btn-icon">
         <use href="./img/sprite.svg#icon-arrow-right"></use>
@@ -25,13 +25,13 @@ import{l as n}from"./assets/initialization-b58de053.js";import"./assets/vendor-8
       <use href="./img/sprite.svg#icon-icon-run"></use>
     </svg>
     <span class="exercise-card-header-text"
-      >${a}</span
+      >${r}</span
     >
   </h3>
   <ul class="exercises-card-info-list">
     <li class="exercise-card-info-parameter">
       <p class="exercise-card-parameter-name">Burned calories:</p>
-      <p class="exercise-card-parameter-value">${e} / ${l} min</p>
+      <p class="exercise-card-parameter-value">${l} / ${n} min</p>
     </li>
     <li class="exercise-card-info-parameter">
       <p class="exercise-card-parameter-name">Body part:</p>
@@ -39,8 +39,8 @@ import{l as n}from"./assets/initialization-b58de053.js";import"./assets/vendor-8
     </li>
     <li class="exercise-card-info-parameter">
       <p class="exercise-card-parameter-name">Target:</p>
-      <p class="exercise-card-parameter-value">${u}</p>
+      <p class="exercise-card-parameter-value">${p}</p>
     </li>
   </ul>
-  </li>`}const i=document.querySelector(".favorites-not-found-exercises");function o(){const s=document.querySelector(".favorites-exercises-list"),r=n.getFavorites(),a=r.map(e=>g({name:e.name,burnedCalories:e.burnedCalories,time:e.time,bodyPart:e.bodyPart,target:e.target,rating:e.rating,id:e._id},!0)).join("");s.innerHTML=a,r.length>0?i.classList.contains("visually-hidden")||i.classList.all("visually-hidden"):i.classList.remove("visually-hidden")}o();document.querySelector(".favorites-exercises-list").addEventListener("click",s=>{s.target.closest(".exercise-card-start-btn")&&console.log(s.target.closest(".exercise-card-start-btn").getAttribute("data-open-id")),s.target.closest(".exercise-card-remove-btn")&&(n.deleteItemFromFavorites(s.target.closest(".exercise-card-remove-btn").getAttribute("data-delete-id")),o())});
+  </li>`}const c=document.querySelector(".favorites-not-found-exercises"),x=document.querySelector(".favorites-exercises-list");o();document.querySelector(".favorites-exercises-list").addEventListener("click",e=>{e.target.closest(".exercise-card-start-btn")&&console.log(e.target.closest(".exercise-card-start-btn").getAttribute("data-open-id")),e.target.closest(".exercise-card-remove-btn")&&(i.deleteItemFromFavorites(e.target.closest(".exercise-card-remove-btn").getAttribute("data-delete-id")),o())});function o(){const e=i.getFavorites(),s=e.map(r=>m(r,!0)).join("");x.innerHTML=s,e.length>0?c.classList.contains("visually-hidden")||c.classList.add("visually-hidden"):c.classList.remove("visually-hidden")}
 //# sourceMappingURL=commonHelpers.js.map

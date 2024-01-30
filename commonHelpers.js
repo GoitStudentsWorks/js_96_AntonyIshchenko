@@ -1,4 +1,4 @@
-import{l}from"./assets/initialization-9dc8d04a.js";import"./assets/vendor-b9992e9a.js";function x(e={},r=!1){const{name:s,burnedCalories:a,time:p,bodyPart:m,target:v,rating:g,_id:i}=e;let c="";return r?c=`<button type="button" class="exercise-card-remove-btn" data-delete-id="${i}">
+import{l}from"./assets/initialization-4a06e9b9.js";import"./assets/vendor-a65214f2.js";function x(e={},r=!1){const{name:s,burnedCalories:a,time:p,bodyPart:m,target:v,rating:g,_id:i}=e;let c="";return r?c=`<button type="button" class="exercise-card-remove-btn" data-delete-id="${i}">
        <svg class="exercise-card-remove-icon">
            <use href="./img/sprite.svg#icon-trash-black"></use>
        </svg>

@@ -7,10 +7,10 @@
     <title>Energy Flow</title>
     
     <script type="module" crossorigin src="/b12efjstp/commonHelpers2.js"></script>
-    <link rel="modulepreload" crossorigin href="/b12efjstp/assets/vendor-b9992e9a.js">
-    <link rel="modulepreload" crossorigin href="/b12efjstp/assets/initialization-9dc8d04a.js">
+    <link rel="modulepreload" crossorigin href="/b12efjstp/assets/vendor-a65214f2.js">
+    <link rel="modulepreload" crossorigin href="/b12efjstp/assets/initialization-4a06e9b9.js">
     <link rel="stylesheet" href="/b12efjstp/assets/vendor-e5212ee8.css">
-    <link rel="stylesheet" href="/b12efjstp/assets/index-51917926.css">
+    <link rel="stylesheet" href="/b12efjstp/assets/index-e32ab75f.css">
   </head>
 
   <body>
@@ -311,12 +311,13 @@
           </p>
           <label class="footer-form-label">
             <input
-              class="footer-form-input"
-              type="email"
-              pattern="/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/"
+              class="footer-form-input is-glowing"
               id="footer-subscription-form-input"
-              name="footer-form-input"
+              type="email"
+              name="email"
               placeholder="Email"
+              pattern="/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/"
+              required
             />
           </label>
           <button class="footer-form-submit" type="submit">Send</button>

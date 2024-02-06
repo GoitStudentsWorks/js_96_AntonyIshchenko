@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/b12efjstp/",
+    "build": "vite build --base=/js_96_AntonyIshchenko/",
     "preview": "vite preview"
   },
   "devDependencies": {
